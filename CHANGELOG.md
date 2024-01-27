@@ -2,8 +2,13 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
-
 <!--- END HEADER -->
+
+## [0.0.4](https://github.com/cgarciagarcia/backend-template/compare/v0.0.3...v0.0.4) (2024-01-27)
+
+
+---
+
 ## v0.0.3 - 2024-01-27
 
 ### What's Changed
