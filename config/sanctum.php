@@ -46,8 +46,8 @@ return [
     |
     */
 
-    'expiration' => null,
-
+    'expiration' => env('SESSION_TOKEN_EXPIRATION', 60 * 3),
+    'rt_expiration' => env('REFRESH_TOKEN_LIFETIME', 60 * 24),
     /*
     |--------------------------------------------------------------------------
     | Token Prefix

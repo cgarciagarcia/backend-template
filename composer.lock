@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aff0529bad37ff664b4339b4467c4159",
+    "content-hash": "afaef65804be305cf3a60fa2b97e5939",
     "packages": [
         {
             "name": "brick/math",
@@ -11071,11 +11071,17 @@
         },
         {
             "name": "ramsey/conventional-commits",
-            "version": "dev-main",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cgarciagarcia/conventional-commits.git",
-                "reference": "410104bfd4825eaa9fa8f0b799236c2e35f977c9"
+                "url": "https://github.com/ramsey/conventional-commits.git",
+                "reference": "b995ee3e1592757c01551b30f6e90176d7f81ec2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/conventional-commits/zipball/b995ee3e1592757c01551b30f6e90176d7f81ec2",
+                "reference": "b995ee3e1592757c01551b30f6e90176d7f81ec2",
+                "shasum": ""
             },
             "require": {
                 "composer-runtime-api": "^2.0",
@@ -11084,8 +11090,8 @@
                 "jawira/case-converter": "^3.5",
                 "opis/json-schema": "^2.3",
                 "php": "^8.1",
-                "symfony/console": "^7.0",
-                "symfony/filesystem": "^7.0"
+                "symfony/console": "^6.0 || ^7.0",
+                "symfony/filesystem": "^6.0 || ^7.0"
             },
             "require-dev": {
                 "captainhook/captainhook": "^5.15",
@@ -11111,7 +11117,6 @@
             "suggest": {
                 "captainhook/captainhook": "Manage your project's Git hooks with CaptainHook, and use ramsey/conventional-commits in your commit-msg and prepare-commit-msg hooks."
             },
-            "default-branch": true,
             "bin": [
                 "bin/conventional-commits"
             ],
@@ -11133,58 +11138,7 @@
                     "Ramsey\\ConventionalCommits\\": "src/ConventionalCommits/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Ramsey\\Test\\": "tests/"
-                }
-            },
-            "scripts": {
-                "dev:analyze": [
-                    "@dev:analyze:phpstan"
-                ],
-                "dev:analyze:phpstan": [
-                    "phpstan analyse --ansi --memory-limit 256M"
-                ],
-                "dev:build:clean": [
-                    "git clean -fX build/"
-                ],
-                "dev:lint": [
-                    "@dev:lint:syntax",
-                    "@dev:lint:style"
-                ],
-                "dev:lint:fix": [
-                    "phpcbf"
-                ],
-                "dev:lint:style": [
-                    "phpcs --colors"
-                ],
-                "dev:lint:syntax": [
-                    "parallel-lint --colors src/ tests/"
-                ],
-                "dev:test": [
-                    "@dev:lint",
-                    "@dev:analyze",
-                    "@dev:test:unit"
-                ],
-                "dev:test:coverage:ci": [
-                    "phpunit --colors=always --coverage-text --coverage-clover build/coverage/clover.xml --coverage-cobertura build/coverage/cobertura.xml --coverage-crap4j build/coverage/crap4j.xml --coverage-xml build/coverage/coverage-xml --log-junit build/junit.xml"
-                ],
-                "dev:test:coverage:html": [
-                    "phpunit --colors=always --coverage-html build/coverage/coverage-html/"
-                ],
-                "dev:test:functional": [
-                    "./tests/bash-test tests/functional-tests.sh"
-                ],
-                "dev:test:unit": [
-                    "phpunit --colors=always"
-                ],
-                "test": [
-                    "@dev:test"
-                ],
-                "test-functional": [
-                    "@dev:test:functional"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -11197,16 +11151,26 @@
             ],
             "description": "A PHP library for creating and validating commit messages according to the Conventional Commits specification. Includes a CaptainHook action!",
             "keywords": [
+                "HOOK",
                 "captainhook",
                 "commit",
                 "commit-msg",
                 "conventional",
                 "conventional-commits",
                 "git",
-                "hook",
                 "plugin"
             ],
-            "time": "2024-05-03T22:57:29+00:00"
+            "support": {
+                "issues": "https://github.com/ramsey/conventional-commits/issues",
+                "source": "https://github.com/ramsey/conventional-commits/tree/1.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ramsey",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-04-17T04:53:18+00:00"
         },
         {
             "name": "react/promise",
@@ -14041,9 +14005,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "ramsey/conventional-commits": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

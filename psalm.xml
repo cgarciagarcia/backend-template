@@ -23,7 +23,6 @@
             <file name="src/App/Providers/AuthServiceProvider.php"/>
             <file name="src/App/Http/Middleware/TrustHosts.php"/>
             <file name="src/App/Http/Kernel.php"/>
-            <file name="src/App/Exceptions/Handler.php"/>
             <file name="src/App/Console/Kernel.php"/>
             <file name="database/seeders/DatabaseSeeder.php"/>
             <file name="src/App/Http/Middleware/VerifyCsrfToken.php"/>
@@ -34,7 +33,6 @@
             <file name="src/App/Http/Middleware/EncryptCookies.php"/>
             <file name="src/App/Http/Middleware/Authenticate.php"/>
             <file name="src/App/Http/Controllers/Controller.php"/>
-            <file name="database/migrations/2024_01_30_001116_create_permission_tables.php"/>
         </ignoreFiles>
     </projectFiles>
     <plugins>

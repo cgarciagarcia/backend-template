@@ -7,8 +7,6 @@ parameters:
     - tests
     - database
     reportUnmatchedIgnoredErrors: false
-    excludePaths:
-    		- database/migrations/2024_01_30_001116_create_permission_tables.php
     ignoreErrors:
         -
             message: '#^Call to an undefined method Pest\\Expectation.*::.*\(.*\).$#'
