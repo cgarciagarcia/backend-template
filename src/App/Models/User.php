@@ -20,11 +20,11 @@ use Spatie\Permission\Traits\HasRoles;
 /**
  * App\Models\User
  *
- * @property int $id
- * @property string $name
- * @property string $email
+ * @property int         $id
+ * @property string      $name
+ * @property string      $email
  * @property Carbon|null $email_verified_at
- * @property mixed $password
+ * @property mixed       $password
  * @property string|null $remember_token
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -36,6 +36,7 @@ use Spatie\Permission\Traits\HasRoles;
  * @property-read int|null $roles_count
  * @property-read Collection<int, PersonalAccessToken> $tokens
  * @property-read int|null $tokens_count
+ *
  * @method static Builder|User newModelQuery()
  * @method static Builder|User newQuery()
  * @method static Builder|User permission($permissions, $without = false)
@@ -51,6 +52,7 @@ use Spatie\Permission\Traits\HasRoles;
  * @method static Builder|User whereUpdatedAt($value)
  * @method static Builder|User withoutPermission($permissions)
  * @method static Builder|User withoutRole($roles, $guard = null)
+ *
  * @mixin \Eloquent
  */
 class User extends Authenticatable

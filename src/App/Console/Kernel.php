@@ -15,7 +15,6 @@ class Kernel extends ConsoleKernel
     #[\Override]
     protected function schedule(Schedule $schedule): void
     {
-        // $schedule->command('inspire')->hourly();
     }
 
     /**
@@ -24,7 +23,7 @@ class Kernel extends ConsoleKernel
     #[\Override]
     protected function commands(): void
     {
-        $this->load(__DIR__.'/Commands');
+        $this->load(__DIR__ . '/Commands');
 
         require $this->app->basePath('routes/console.php');
     }

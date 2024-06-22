@@ -15,7 +15,8 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.8",
         "sentry/sentry-laravel": "^4.2",
-        "spatie/laravel-permission": "^6.3"
+        "spatie/laravel-permission": "^6.3",
+        "spatie/laravel-query-builder": "^6.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^v3.0.0",
@@ -36,7 +37,7 @@
         "psalm/plugin-laravel": "^2.8",
         "psalm/plugin-mockery": "^1.1",
         "psalm/plugin-phpunit": "^0.18.4",
-        "ramsey/conventional-commits": "^1.5",
+        "ramsey/conventional-commits": "dev-main",
         "spatie/laravel-ignition": "^2.0",
         "vimeo/psalm": "^5.22.1",
         "worksome/coding-style": "^2.7"
@@ -121,16 +122,8 @@
     "version": "0.0.1",
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "name": "ramsey/conventional-commits",
-                "version": "1.5",
-                "source": {
-                    "url": "https://github.com/cgarciagarcia/conventional-commits.git",
-                    "type": "git",
-                    "reference": "main"
-                }
-            }
+            "type": "git",
+            "url": "https://github.com/cgarciagarcia/conventional-commits.git"
         }
     ]
 }

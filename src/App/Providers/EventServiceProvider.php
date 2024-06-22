@@ -27,7 +27,6 @@ class EventServiceProvider extends ServiceProvider
     #[\Override]
     public function boot(): void
     {
-        //
     }
 
     /**
