@@ -37,7 +37,7 @@
         "psalm/plugin-laravel": "^2.11.0",
         "psalm/plugin-mockery": "^1.1",
         "psalm/plugin-phpunit": "^0.18.4",
-        "ramsey/conventional-commits": "dev-main",
+        "ramsey/conventional-commits": "^1.5.1",
         "spatie/laravel-ignition": "^2.7",
         "vimeo/psalm": "^5.25.0",
         "worksome/coding-style": "^2.10.2"
@@ -119,11 +119,5 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
-    "version": "0.0.1",
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/cgarciagarcia/conventional-commits.git"
-        }
-    ]
+    "version": "0.0.1"
 }
